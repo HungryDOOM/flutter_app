@@ -33,12 +33,47 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Welcome to Flutter')),
+      appBar: AppBar(title: Text('LDSW Utilizacion de widgets')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text('Hello World')
+          children: <Widget>[
+            Expanded(
+              child: Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Container(
+                      color: Colors.red, child: Text('Column 1 / Row 1')
+                    )),
+                  Expanded(
+                    child: Container(
+                      color: Colors.blue, child: Text('Column 2 / Row 1')
+                    )),
+                  Expanded(
+                    child: Container(
+                      color: Colors.green, child: Text('Column 3 / Row 1')
+                    )),
+                ],
+              )
+            ),
+            Expanded(
+              child: Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Container(
+                      color: Colors.red, child: Text('Column 1 / Row 2')
+                    )),
+                  Expanded(
+                    child: Container(
+                      color: Colors.blue, child: Text('Column 2 / Row 2')
+                    )),
+                  Expanded(
+                    child: Container(
+                      color: Colors.green, child: Text('Column 3 / Row 2')
+                    )),
+                ],
+              )
+            ),
           ],
         ),
       ),
