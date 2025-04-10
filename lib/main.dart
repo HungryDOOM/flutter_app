@@ -40,19 +40,29 @@ class MyHomePage extends StatelessWidget {
           children: <Widget>[
             Expanded(
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Expanded(
                     child: Container(
-                      color: Colors.red, child: Text('Column 1 / Row 1')
-                    )),
+                      height: double.infinity,
+                      color: Colors.red,
+                      child: Text('Column 1 / Row 1'),
+                    )
+                  ),
                   Expanded(
                     child: Container(
-                      color: Colors.blue, child: Text('Column 2 / Row 1')
-                    )),
+                      height: double.infinity,
+                      color: Colors.blue,
+                      child: Text('Column 2 / Row 1')
+                    )
+                  ),
                   Expanded(
                     child: Container(
-                      color: Colors.green, child: Text('Column 3 / Row 1')
-                    )),
+                      height: double.infinity,
+                      color: Colors.green,
+                      child: Text('Column 3 / Row 1')
+                    )
+                  ),
                 ],
               )
             ),
@@ -61,16 +71,46 @@ class MyHomePage extends StatelessWidget {
                 children: <Widget>[
                   Expanded(
                     child: Container(
-                      color: Colors.red, child: Text('Column 1 / Row 2')
-                    )),
+                      height: double.infinity,
+                      color: Colors.red,
+                      child: Text('Column 1 / Row 2')
+                    )
+                  ),
                   Expanded(
                     child: Container(
-                      color: Colors.blue, child: Text('Column 2 / Row 2')
-                    )),
+                      height: double.infinity,
+                      color: Colors.blue,
+                      child: Text('Column 2 / Row 2')
+                    )
+                  ),
                   Expanded(
                     child: Container(
-                      color: Colors.green, child: Text('Column 3 / Row 2')
-                    )),
+                      height: double.infinity,
+                      color: Colors.green,
+                      child: Text('Column 3 / Row 2')
+                    )
+                  ),
+                ],
+              )
+            ),
+            Expanded(
+              child: Stack(
+                children: <Widget>[
+                  Positioned(
+                    left: 20,
+                    bottom: 10,
+                    child: Image.asset('assets/images/facebook.png', width: 100)
+                  ),
+                  Positioned(
+                    left: 40,
+                    bottom: 20,
+                    child: Image.asset('assets/images/instagram.png', width: 100)
+                  ),
+                  Positioned(
+                    left: 60,
+                    bottom: 30,
+                    child: Image.asset('assets/images/x.png', width: 100)
+                  ),
                 ],
               )
             ),
