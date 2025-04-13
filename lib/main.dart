@@ -32,89 +32,27 @@ class MyAppState extends ChangeNotifier {
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+    final factor = ((screenWidth-100)*1.5) / screenWidth;
     return Scaffold(
-      appBar: AppBar(title: Text('LDSW Utilizacion de widgets')),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Expanded(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Expanded(
-                    child: Container(
-                      height: double.infinity,
-                      color: Colors.red,
-                      child: Text('Column 1 / Row 1'),
-                    )
-                  ),
-                  Expanded(
-                    child: Container(
-                      height: double.infinity,
-                      color: Colors.blue,
-                      child: Text('Column 2 / Row 1')
-                    )
-                  ),
-                  Expanded(
-                    child: Container(
-                      height: double.infinity,
-                      color: Colors.green,
-                      child: Text('Column 3 / Row 1')
-                    )
-                  ),
-                ],
-              )
+        child: Container(
+          height: double.infinity,
+          width: double.infinity,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/images/back.jpg'), fit: BoxFit.cover)
+          ),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Align(alignment: Alignment.center, child: Text('Hello', style: TextStyle(fontSize: 50*factor, color: Colors.white60), textAlign: TextAlign.center,)),
+                Align(alignment: Alignment.center, child: RotatedBox(quarterTurns: 1, child: Text(':)', style: TextStyle(fontSize: 50*factor, color: Colors.white60))),),
+                Align(alignment: Alignment.center, child: Text('Welcome to the Flut-APP', style: TextStyle(fontSize: 15*factor, color: Colors.white24))),
+              ],
             ),
-            Expanded(
-              child: Row(
-                children: <Widget>[
-                  Expanded(
-                    child: Container(
-                      height: double.infinity,
-                      color: Colors.red,
-                      child: Text('Column 1 / Row 2')
-                    )
-                  ),
-                  Expanded(
-                    child: Container(
-                      height: double.infinity,
-                      color: Colors.blue,
-                      child: Text('Column 2 / Row 2')
-                    )
-                  ),
-                  Expanded(
-                    child: Container(
-                      height: double.infinity,
-                      color: Colors.green,
-                      child: Text('Column 3 / Row 2')
-                    )
-                  ),
-                ],
-              )
-            ),
-            Expanded(
-              child: Stack(
-                children: <Widget>[
-                  Positioned(
-                    left: 20,
-                    bottom: 10,
-                    child: Image.asset('assets/images/facebook.png', width: 100)
-                  ),
-                  Positioned(
-                    left: 40,
-                    bottom: 20,
-                    child: Image.asset('assets/images/instagram.png', width: 100)
-                  ),
-                  Positioned(
-                    left: 60,
-                    bottom: 30,
-                    child: Image.asset('assets/images/x.png', width: 100)
-                  ),
-                ],
-              )
-            ),
-          ],
+          ),
         ),
       ),
     );
