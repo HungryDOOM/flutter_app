@@ -137,6 +137,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\brian\Documents\GitHub\flutter_app\build\windows\x64\plugins\firebase_core\firebase_core_plugin.vcxproj">
+      <Project>{08F633D6-545B-3C2C-9A7D-C80B2F75B68D}</Project>
+      <Name>firebase_core_plugin</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\brian\Documents\GitHub\flutter_app\build\windows\x64\runner\flutter_app.vcxproj">
       <Project>{2090F3CE-57E8-3CEC-B578-1B0E0740213C}</Project>
       <Name>flutter_app</Name>

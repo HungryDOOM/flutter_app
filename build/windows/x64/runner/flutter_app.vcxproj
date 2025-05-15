@@ -71,7 +71,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\brian\Documents\GitHub\flutter_app\windows;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\cpp_client_wrapper\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\brian\Documents\GitHub\flutter_app\windows;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\.plugin_symlinks\firebase_core\windows\include;C:\Users\brian\Documents\GitHub\flutter_app\build\windows\x64\extracted\firebase_cpp_sdk_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -86,15 +86,15 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_HAS_EXCEPTIONS=0;_DEBUG;FLUTTER_VERSION="0.0.1+1";FLUTTER_VERSION_MAJOR=0;FLUTTER_VERSION_MINOR=0;FLUTTER_VERSION_PATCH=1;FLUTTER_VERSION_BUILD=1;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_HAS_EXCEPTIONS=0;_DEBUG;FLUTTER_VERSION="0.0.1+1";FLUTTER_VERSION_MAJOR=0;FLUTTER_VERSION_MINOR=0;FLUTTER_VERSION_PATCH=1;FLUTTER_VERSION_BUILD=1;NOMINMAX;UNICODE;_UNICODE;FLUTTER_PLUGIN_IMPL;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_HAS_EXCEPTIONS=0;FLUTTER_VERSION=\"0.0.1+1\";FLUTTER_VERSION_MAJOR=0;FLUTTER_VERSION_MINOR=0;FLUTTER_VERSION_PATCH=1;FLUTTER_VERSION_BUILD=1;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\brian\Documents\GitHub\flutter_app\windows;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\cpp_client_wrapper\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_HAS_EXCEPTIONS=0;FLUTTER_VERSION=\"0.0.1+1\";FLUTTER_VERSION_MAJOR=0;FLUTTER_VERSION_MINOR=0;FLUTTER_VERSION_PATCH=1;FLUTTER_VERSION_BUILD=1;NOMINMAX;UNICODE;_UNICODE;FLUTTER_PLUGIN_IMPL;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\brian\Documents\GitHub\flutter_app\windows;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\.plugin_symlinks\firebase_core\windows\include;C:\Users\brian\Documents\GitHub\flutter_app\build\windows\x64\extracted\firebase_cpp_sdk_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\brian\Documents\GitHub\flutter_app\windows;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\cpp_client_wrapper\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\brian\Documents\GitHub\flutter_app\windows;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\.plugin_symlinks\firebase_core\windows\include;C:\Users\brian\Documents\GitHub\flutter_app\build\windows\x64\extracted\firebase_cpp_sdk_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -102,7 +102,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\flutter\Debug\flutter_wrapper_app.lib;dwmapi.lib;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\flutter_windows.dll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\flutter\Debug\flutter_wrapper_app.lib;dwmapi.lib;..\plugins\firebase_core\Debug\firebase_core_plugin.lib;..\extracted\firebase_cpp_sdk_windows\libs\windows\VS2019\MD\x64\Debug\firebase_app.lib;advapi32.lib;ws2_32.lib;crypt32.lib;rpcrt4.lib;ole32.lib;icu.lib;..\flutter\Debug\flutter_wrapper_plugin.lib;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\flutter_windows.dll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -120,7 +120,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\brian\Documents\GitHub\flutter_app\windows;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\cpp_client_wrapper\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\brian\Documents\GitHub\flutter_app\windows;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\.plugin_symlinks\firebase_core\windows\include;C:\Users\brian\Documents\GitHub\flutter_app\build\windows\x64\extracted\firebase_cpp_sdk_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DisableSpecificWarnings>"4100"</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -133,17 +133,17 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;FLUTTER_VERSION="0.0.1+1";FLUTTER_VERSION_MAJOR=0;FLUTTER_VERSION_MINOR=0;FLUTTER_VERSION_PATCH=1;FLUTTER_VERSION_BUILD=1;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR="Profile";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;FLUTTER_VERSION="0.0.1+1";FLUTTER_VERSION_MAJOR=0;FLUTTER_VERSION_MINOR=0;FLUTTER_VERSION_PATCH=1;FLUTTER_VERSION_BUILD=1;NOMINMAX;UNICODE;_UNICODE;FLUTTER_PLUGIN_IMPL;CMAKE_INTDIR="Profile";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;FLUTTER_VERSION=\"0.0.1+1\";FLUTTER_VERSION_MAJOR=0;FLUTTER_VERSION_MINOR=0;FLUTTER_VERSION_PATCH=1;FLUTTER_VERSION_BUILD=1;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR=\"Profile\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\brian\Documents\GitHub\flutter_app\windows;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\cpp_client_wrapper\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;FLUTTER_VERSION=\"0.0.1+1\";FLUTTER_VERSION_MAJOR=0;FLUTTER_VERSION_MINOR=0;FLUTTER_VERSION_PATCH=1;FLUTTER_VERSION_BUILD=1;NOMINMAX;UNICODE;_UNICODE;FLUTTER_PLUGIN_IMPL;CMAKE_INTDIR=\"Profile\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\brian\Documents\GitHub\flutter_app\windows;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\.plugin_symlinks\firebase_core\windows\include;C:\Users\brian\Documents\GitHub\flutter_app\build\windows\x64\extracted\firebase_cpp_sdk_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\brian\Documents\GitHub\flutter_app\windows;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\cpp_client_wrapper\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\brian\Documents\GitHub\flutter_app\windows;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\.plugin_symlinks\firebase_core\windows\include;C:\Users\brian\Documents\GitHub\flutter_app\build\windows\x64\extracted\firebase_cpp_sdk_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -151,7 +151,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\flutter\Profile\flutter_wrapper_app.lib;dwmapi.lib;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\flutter_windows.dll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\flutter\Profile\flutter_wrapper_app.lib;dwmapi.lib;..\plugins\firebase_core\Profile\firebase_core_plugin.lib;..\extracted\firebase_cpp_sdk_windows\libs\windows\VS2019\MD\x64\Debug\firebase_app.lib;advapi32.lib;ws2_32.lib;crypt32.lib;rpcrt4.lib;ole32.lib;icu.lib;..\flutter\Profile\flutter_wrapper_plugin.lib;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\flutter_windows.dll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -169,7 +169,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\brian\Documents\GitHub\flutter_app\windows;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\cpp_client_wrapper\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\brian\Documents\GitHub\flutter_app\windows;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\.plugin_symlinks\firebase_core\windows\include;C:\Users\brian\Documents\GitHub\flutter_app\build\windows\x64\extracted\firebase_cpp_sdk_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DisableSpecificWarnings>"4100"</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -182,17 +182,17 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;FLUTTER_VERSION="0.0.1+1";FLUTTER_VERSION_MAJOR=0;FLUTTER_VERSION_MINOR=0;FLUTTER_VERSION_PATCH=1;FLUTTER_VERSION_BUILD=1;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;FLUTTER_VERSION="0.0.1+1";FLUTTER_VERSION_MAJOR=0;FLUTTER_VERSION_MINOR=0;FLUTTER_VERSION_PATCH=1;FLUTTER_VERSION_BUILD=1;NOMINMAX;UNICODE;_UNICODE;FLUTTER_PLUGIN_IMPL;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;FLUTTER_VERSION=\"0.0.1+1\";FLUTTER_VERSION_MAJOR=0;FLUTTER_VERSION_MINOR=0;FLUTTER_VERSION_PATCH=1;FLUTTER_VERSION_BUILD=1;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\brian\Documents\GitHub\flutter_app\windows;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\cpp_client_wrapper\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;FLUTTER_VERSION=\"0.0.1+1\";FLUTTER_VERSION_MAJOR=0;FLUTTER_VERSION_MINOR=0;FLUTTER_VERSION_PATCH=1;FLUTTER_VERSION_BUILD=1;NOMINMAX;UNICODE;_UNICODE;FLUTTER_PLUGIN_IMPL;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\brian\Documents\GitHub\flutter_app\windows;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\.plugin_symlinks\firebase_core\windows\include;C:\Users\brian\Documents\GitHub\flutter_app\build\windows\x64\extracted\firebase_cpp_sdk_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\brian\Documents\GitHub\flutter_app\windows;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\cpp_client_wrapper\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\brian\Documents\GitHub\flutter_app\windows;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\.plugin_symlinks\firebase_core\windows\include;C:\Users\brian\Documents\GitHub\flutter_app\build\windows\x64\extracted\firebase_cpp_sdk_windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -200,7 +200,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\flutter\Release\flutter_wrapper_app.lib;dwmapi.lib;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\flutter_windows.dll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\flutter\Release\flutter_wrapper_app.lib;dwmapi.lib;..\plugins\firebase_core\Release\firebase_core_plugin.lib;..\extracted\firebase_cpp_sdk_windows\libs\windows\VS2019\MD\x64\Release\firebase_app.lib;advapi32.lib;ws2_32.lib;crypt32.lib;rpcrt4.lib;ole32.lib;icu.lib;..\flutter\Release\flutter_wrapper_plugin.lib;C:\Users\brian\Documents\GitHub\flutter_app\windows\flutter\ephemeral\flutter_windows.dll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -275,6 +275,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\brian\Documents\GitHub\flutter_app\build\windows\x64\plugins\firebase_core\firebase_core_plugin.vcxproj">
+      <Project>{08F633D6-545B-3C2C-9A7D-C80B2F75B68D}</Project>
+      <Name>firebase_core_plugin</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\brian\Documents\GitHub\flutter_app\build\windows\x64\flutter\flutter_assemble.vcxproj">
       <Project>{FEECE513-A598-364C-9578-C5051DC17161}</Project>
       <Name>flutter_assemble</Name>
@@ -284,6 +288,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:\Users\brian\Documents\GitHub\flutter_app\build\windows\x64\flutter\flutter_wrapper_app.vcxproj">
       <Project>{246F3D21-7937-3E36-9A71-0DB83197E5B3}</Project>
       <Name>flutter_wrapper_app</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\brian\Documents\GitHub\flutter_app\build\windows\x64\flutter\flutter_wrapper_plugin.vcxproj">
+      <Project>{87847CEB-26F9-3830-BE0A-1D5E0A4F33F0}</Project>
+      <Name>flutter_wrapper_plugin</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

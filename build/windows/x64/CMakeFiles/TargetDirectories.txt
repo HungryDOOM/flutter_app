@@ -8,3 +8,7 @@ C:/Users/brian/Documents/GitHub/flutter_app/build/windows/x64/flutter/CMakeFiles
 C:/Users/brian/Documents/GitHub/flutter_app/build/windows/x64/runner/CMakeFiles/flutter_app.dir
 C:/Users/brian/Documents/GitHub/flutter_app/build/windows/x64/runner/CMakeFiles/INSTALL.dir
 C:/Users/brian/Documents/GitHub/flutter_app/build/windows/x64/runner/CMakeFiles/ALL_BUILD.dir
+C:/Users/brian/Documents/GitHub/flutter_app/build/windows/x64/plugins/firebase_core/CMakeFiles/firebase_core_plugin.dir
+C:/Users/brian/Documents/GitHub/flutter_app/build/windows/x64/plugins/firebase_core/CMakeFiles/INSTALL.dir
+C:/Users/brian/Documents/GitHub/flutter_app/build/windows/x64/plugins/firebase_core/CMakeFiles/ALL_BUILD.dir
+C:/Users/brian/Documents/GitHub/flutter_app/build/windows/x64/plugins/firebase_core/bin/CMakeFiles/INSTALL.dir
